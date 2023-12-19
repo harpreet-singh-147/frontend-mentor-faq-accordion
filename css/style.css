@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.6rem;
+  height: 100vh;
+  background: url('../assets/images/background-pattern-desktop.svg'),
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 30%,
+      hsl(275, 100%, 97%) 30%
+    );
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100%, 100% 100%;
+  background-position: 0 0, 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.accordion {
+  position: fixed;
+  background-color: #fff;
+  width: 550px;
+  padding: 2.5em 2.5em 1em 2.5em;
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  margin-top: 18em;
+}
+
+.accordion__heading {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.accordion__heading img {
+  width: 1.3em;
+}
+
+.accordion__heading span {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.accordion__qstn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 1.2em 0 0 0;
+  border-bottom: 1px solid rgba(233, 224, 224, 0.549);
+}
+
+.accordion__qstn-container:last-child {
+  border-bottom: none;
+}
+
+.accordion__qstn {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.accordion__qstn p:hover {
+  color: hsl(292, 16%, 49%);
+}
+
+.accordion__qstn p:active {
+  color: hsl(292, 16%, 49%);
+}
+
+.accordion__answer {
+  margin: 0.8em 0 0.8em 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background-color: white;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 1.5rem;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 2em;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: hsl(228, 55%, 60%);
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 1240px) {
+  body {
+    background: url('../assets/images/background-pattern-mobile.svg'),
+      linear-gradient(
+        to bottom,
+        hsl(275, 100%, 97%) 30%,
+        hsl(275, 100%, 97%) 30%
+      );
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100%, 100% 100%;
+    background-position: 0 0, 0 0;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .accordion {
+    width: 90%;
+    margin-top: 13em;
+    padding: 2.5em 1.1em 0.5em 1.1em;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .accordion {
+    margin-top: 8em;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .attribution {
+    font-size: 1rem;
+  }
+}

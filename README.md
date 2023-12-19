@@ -29,6 +29,7 @@ Users should be able to:
 ### Links
 
 - Live Site URL: [FAQ Accordion Challenge](https://fm-faq-accordion-challenge.netlify.app/)
+- Solution URL: [FAQ Accordion Challenge](https://www.frontendmentor.io/solutions/faq-accordion-component-with-html-css-and-javascript-yMxHNg7-tQ)
 
 ### Built with
 

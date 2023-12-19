@@ -76,11 +76,11 @@ body {
   cursor: pointer;
 }
 
-.accordion__qstn p:hover {
+.accordion__qstn:hover {
   color: hsl(292, 16%, 49%);
 }
 
-.accordion__qstn p:active {
+.accordion__qstn:active {
   color: hsl(292, 16%, 49%);
 }
 
